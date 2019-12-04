@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/app.css"/>
+        <link rel="icon" href="image/icon.png" />
+        <link href="font/Ubuntu-Regular.ttf" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>  
+            <!-- start slideshow -->
+            <div class="slides">
+              <!-- slides image -->
+              <img class="mySlides" src="image/mg1.jpeg">
+              <img class="mySlides" src="image/mg2.jpeg">
+              <img class="mySlides" src="image/mg3.jpeg">
+              <img class="mySlides" src="image/mg4.jpeg">
+              <!-- button -->
+              <button class="button left" onclick="addDiv(-1)">&#10094;</button>
+              <button class="button right" onclick="addDiv(1)">&#10095;</button>
+            </div>
+            <!-- end slideshow -->
+        </header>
+        <div class="container">
+            <!-- start nav -->
+            <nav>
+                <div class = "logo">
+                    <h1><span>Rest</span>aurant</h1>
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li class="active"><a href="#">Menu</a></li>
+                        <li><a href="#">our story</a></li>
+                        <li><a href="#">reviews</a></li>
+                        <li><a href="#">catering</a></li>
+                        <li><a href="#">locations</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end nav -->
+        </div>    
+            <!-- start main -->
+            <main>
+                <p class="typed"> </p>
+            </main>
+            <!-- end main -->
+        <div class="container">
+            <!-- start content -->
+            <div class="content">
+                <!-- start product -->
+                <div class="product">
+                    <!-- product title -->
+                    <div class="product-title">
+                        <h1>Product</h1>
+                        <p>Select your product</p>
+                    </div>
+                    <!-- product image -->
+                    <div class="product-image">
+                        <div>
+                            <img onclick ="addProduct(1)" id="p0" src = "image/prodect/mg1.jpg">
+                        </div>
+                        <div><img id="p1" onclick ="addProduct(1)" src = "image/prodect/mg2.jpg"></div>
+                        <div><img id="p2" onclick ="addProduct(1)" src = "image/prodect/mg3.jpg"></div>
+                        <div><img id="p3" onclick ="addProduct(1)" src = "image/prodect/mg4.jpg"></div>
+                        <div><img id="p4" onclick ="addProduct(1)" src = "image/prodect/mg5.jpg"></div>
+                        <div><img id="p5" onclick ="addProduct(1)" src = "image/prodect/mg6.jpg"></div>
+                        <div><img id="p6" onclick ="addProduct(1)" src = "image/prodect/mg7.jpg"></div>
+                        <div><img id="p7" onclick ="addProduct(1)" src = "image/prodect/mg8.jpg"></div>
+                        <div><img id="p8" onclick ="addProduct(1)" src = "image/prodect/mg9.jpg"></div>
+                    </div>
+                </div>
+                <!-- end product -->
+                <!-- start Aside -->
+                <aside>
+                    <h2>About Us</h2>
+                    <p>
+                        <span>S</span>ince 1973, The Spot Restaurant has been the go-to diner for residents of Binghamton, NY.<br> 
+                        Our diner also has a full bakery with delicious baked goods and other treats, including our famous cheesecake. Sounds delicious, right?<br>
+                        The Spot Restaurant is open daily from 5 a.m. to 11 p.m. We’re here to serve you the best food around, whenever you’re looking for a great American restaurant in Binghamton, NY.
+                    </p>
+                    <div id="productselectcount">
+                        <h3>My chart</h3>
+                        <p>Number of Product you select = <span id="num"></span> Product</p>
+                        <button onclick ="addProduct(-1)" class="btleft">Remove</button>
+                        <button onclick ="alertmasssage()" class="btright">Order</button>
+                    </div>
+                </aside>
+                
+                <!-- end Aside -->
+            </div>
+            
+            <!-- end content -->
+            <!-- start footer -->
+            <footer>
+
+                <div class="icon">
+                   <a href ="#"><img src="Favorites/icons8-facebook-50-2.png">
+                    </a> 
+                    <a href ="#"><img src="Favorites/icons8-facebook-messenger-50.png">
+                    </a>
+                    <a href ="#"><img src ="Favorites/icons8-twitter-50-4.png">
+                    </a>
+                    <a href ="#"><img src="Favorites/icons8-youtube-50-6.png">
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>Creat By Amr mohammed © 2019</p>
+                </div>
+            </footer>
+            <!-- end footer -->
+    </div>
+        
+    <!-- slideshow script -->
+    <script src="js/app.js" type="text/javascript"></script>
+    
+    <!-- typeing code -->    
+    <script src="js/typed.js" type="text/javascript">
+        
+    </script>
+    <script type="text/javascript">
+        var typed = new Typed(".typed", {
+          strings: ['',
+              "Welcome in my Restaurant ",
+              "Our diner serves breakfast all day ",
+              "In addition to wholesome and flavorful dining Options for lunch and dinner ",
+              "From burgers to salads, seafood to pastas ",
+              " you’ll find all kinds of hearty meals prepared fresh at The Spot Restaurant ",
+              " The Spot Restaurant is open daily from 5 am to 11 pm ",
+              " We’re here to serve you the best food around ",
+              " whenever you’re looking for a great American restaurant in Binghamton "
+          ],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true,
+        });
+        </script>
+    </body>
+</html>
