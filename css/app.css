@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    background-color: rgba(255, 0, 0, 0.13);
+    background-color: #fff;
+    font-family: 'Ubuntu', cursive;    
+}
+.container{
+    margin: 0 5% 0 5%;
+}
+/* start header */
+header{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+/* slides show */
+header .slides{
+    position: relative;
+    height: inherit;
+    width: 100%;
+}
+header .mySlides {
+    display: none;
+    height: inherit;
+    width: inherit;
+}
+
+/* slide show button */
+header .button{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 20px;
+    height: inherit;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: none;
+    background-color: #fff;
+}
+header .button:hover{
+    color: #45ff00;
+}
+header .left,
+header .right{
+    position:absolute;
+    height: 100%;
+    width: 7%;
+    transform:translate(0%,-50%);
+    background-color: rgba(0, 0, 0, 0.71);
+    color: #fff;
+}
+header .left{
+    top:50%;
+    left:0%;
+}
+header .right{
+    top:50%;
+    right:0%;
+}
+
+header .button .left:hover,
+header .button .right:hover{
+    opacity: 0.9;
+}
+/* end slide show */
+
+/* header end */
+
+/* start nav */
+nav{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* start nav logo */
+nav .logo{
+    width: 25%;
+    height:inherit;
+    overflow: hidden;
+    float: left;
+}
+
+nav .logo h1 {
+    color: rgba(0, 0, 0, 0.71);
+    padding-left: 10px; 
+    padding-top: 3px;
+}
+nav .logo h1 span{
+    color: rgba(255, 78, 0, 0.83);  
+}
+
+/* start list nav bar */
+nav .nav-bar{
+    width: 75%;
+    overflow: hidden;
+    float: right;
+    font-size: 1.1em;
+    padding-top:10px; 
+}
+nav .nav-bar ul{
+    float: right;
+    padding-right: 10px;
+}
+nav .nav-bar ul li{
+    display: inline-block;
+    padding-left: 15px;
+}
+nav .nav-bar ul li a{
+    color: #666;
+}
+nav .nav-bar ul,
+nav .nav-bar ul li a{
+    text-decoration: none;
+}
+nav .nav-bar ul .active a,
+nav .nav-bar ul li a:hover{
+    color: #00a800;
+} 
+/* end nav bar */
+/* start main */
+main
+{
+    text-align: center;
+    color: #383535;
+    font-size: 22px;
+    height: 50px;
+    padding:20px 0 10px 0;
+    margin:10px 0 10px 0;
+    background-color: #f8edcf;
+    overflow: hidden;
+    font-family: 'Ubuntu', cursive;    
+}
+/* end main */
+/* start content */
+.content{
+    width: 100%;
+    padding-top:10px; 
+}
+.content .product{
+    width: 70%;
+    float: left;
+}
+.content .product .product-title{
+    width: 87%;
+    color: #f3c10cf2;
+    text-align: center;
+    margin:10px 0 40px 0;
+}
+.content .product .product-image{
+    width: 100%;
+}
+.content,
+.content .product,
+.content .product .product-title,
+.content .product .product-image,
+.content aside{
+    overflow: hidden;
+}
+/* product images */
+.content .product .product-image > div{
+    width: 33.333333333333333%;
+    padding-bottom: 15px;
+    float: left;
+}
+.content .product .product-image img{
+    width: 90%;
+}
+.content .product .product-image > div img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+/* start productcounter style */
+#productselectcount{
+    display: none;
+    position: fixed;
+    height: 200px;
+    top: 450px;
+    left: 900px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+#productselectcount span{
+    color: gold;
+}
+#productselectcount h3{
+    width: 100%;
+    text-align: center;
+}
+#productselectcount button{
+    background-color:#555;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#productselectcount .btleft{
+    float: left;
+    cursor: pointer;
+}
+#productselectcount .btleft:hover{
+    background-color:red;
+}
+#productselectcount .btright{
+    float: right;
+    cursor: pointer;
+    padding-right: 20px; 
+}
+#productselectcount .btright:hover{
+    background-color: #00c200;
+}
+/* end product counter style */ 
+/* end product side */
+.content aside{
+    width: 30%;
+    display: block;
+    float: right;
+}
+aside h2{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+aside p{
+    line-height: 1.7;
+    padding: 0 10px;
+}
+aside p span{
+    font-size: 22px;
+    color: red;
+}
+
+/* Start footer*/ 
+footer{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px; 
+    padding-bottom: 20px; 
+}
+footer .copyright{
+    overflow: hidden;
+    padding: 10px;
+}
+footer .copyright p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+footer .icon{
+    overflow: hidden;
+    padding: 10px;
+}
+footer .icon img{
+    margin-left: 15px;
+}
+footer .icon img:hover{
+    cursor: pointer;
+    color: red;
+}
